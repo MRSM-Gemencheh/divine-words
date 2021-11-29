@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW</title>
+
+        <link rel="icon" href="./src/icon.jpg">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+        integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+                body {
+            background-image: url('84248.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+        .category {
+           display: flex; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="app">
+        
+        <h1>{{ title }}</h1>
+        <h3>{{ content }}</h3>
+        <h4>{{ category }}</h4>
+
+        <!-- <button v-on:click="getUser()" :class="gender">Get Random</button> -->
+
+        <div>
+            <button class="button">patience</button>
+            <button class="button">cleanliness</button>
+            <button class="button">hope</button>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+
+
+    <script src="hadith.js"></script>
+
+
+</body>
+
+</html>
