@@ -13,7 +13,11 @@
 
         <link rel="manifest" href="manifest.json">
 
-        <script src="./service-worker.js"></script>
+        <script>
+            if ('service-worker' in navigator) {
+                navigator.serviceWorker.register('./service-worker.js');
+            }
+        </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
