@@ -1,6 +1,6 @@
 const hadith = {
 
-    "first": {
+    1: {
         "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
         "content": "Allah does not burden a soul beyond that it can bear (2:286)",
         "category": "patience",   
@@ -8,59 +8,69 @@ const hadith = {
 
     2: {
         "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
-        "content": "Allah does not burden a soul beyond that it can bear (2:286)",
+        "content": "The wings of wisdom are no match for the wings of war.",
         "category": "cleanliness",   
     },
 
     3: {
         "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
-        "content": "Allah does not burden a soul beyond that it can bear (2:286)",
+        "content": "Knowledge is a flame in the darkness.",
         "category": "patience",   
     },
 
+    4: {
+        "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+        "content": "Even in the darkest of times, there is always hope.",
+        "category": "patience",   
+    },
+
+    5: {
+        "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+        "content": "Do not fight fire with fire.",
+        "category": "cleanliness",   
+    },
+
+    6: {
+        "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+        "content": "Appear weak when you are strong, appear strong when you are weak.",
+        "category": "patience",   
+    },
+
+    
+
 }
+
+let counter = 1
 
 
 
 const app = Vue.createApp   ({
 
-// Schema
-
-/*
-title:
-content:
-category:
-*/
-
-
-
     data() {
         return {
-            title: "Balance in all things",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            category: "balance",
-            gender: 'male',
+            "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+            "content": "Allah does not burden a soul beyond that it can bear (2:286)",
+            "category": "patience",   
         }
     },
+
+    
+
     methods: {
-        async getUser() {
-
-            // remove this in future releases since we wont be using it anymore
-            const res = await fetch('https://randomuser.me/api')
-
+        async getHadith() {
             
+            // Fetch from data in hadith const
+            this.title = hadith[counter].title
+            this.content = hadith[counter].content
+            this.category = hadith[counter].category
 
-            const { results } = await res.json()
-            
-            console.log(results)
-
-
-            // Fetch title from data in import statement
-            this.title = hadith.first.title
-            this.content = hadith.first.content
-            this.category = hadith.first.category
-            this.gender = results.gender
-            // this.picture = results[0].picture.large
+            if (counter == 6) {
+                counter = counter - 5
+                console.log(counter)
+            } else {
+                counter = counter + 1
+                console.log(counter)
+            }
         },
     }
 })

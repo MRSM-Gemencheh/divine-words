@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DW</title>
 
-        <link rel="icon" href="./src/icon.jpg">
+    <link rel="icon" href="./src/icon.jpg">
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
@@ -16,14 +16,25 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-                body {
+        body {
             background-image: url('84248.png');
             background-size: 100% 100%;
             background-repeat: no-repeat;
         }
-        
+
         .category {
-           display: flex; 
+            display: flex;
+        }
+
+        .hadith {
+            background-color: hsla(243, 100%, 100%, 0.45);
+            border-radius: 10px;
+            padding: 2em;
+        }
+
+        #random {
+            background-color: rgb(161, 141, 247);
+            margin-top: 2em;
         }
     </style>
 
@@ -33,17 +44,24 @@
 
 
     <div id="app">
-        
-        <h1>{{ title }}</h1>
-        <h3>{{ content }}</h3>
-        <h4>{{ category }}</h4>
 
-        <!-- <button v-on:click="getUser()" :class="gender">Get Random</button> -->
+        <div class="hadith">
+
+            <h1>{{ title }}</h1>
+            <h3>{{ content }}</h3>
+            <h4>{{ category }}</h4>
+
+        </div>
+
+
+        <button v-on:click="getHadith()" class="button" id="random">Random Hadith</button>
 
         <div>
-            <button class="button">patience</button>
-            <button class="button">cleanliness</button>
-            <button class="button">hope</button>
+
+            <p>Find hadiths by category:</p>
+            <a href="" class="button">patience</a>
+            <a href="" class="button">cleanliness</a>
+            <a href="" class="button">hope and peacefulness</a>
 
         </div>
     </div>
