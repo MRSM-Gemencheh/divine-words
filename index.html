@@ -15,11 +15,7 @@
 
         <link rel="manifest" href="manifest.json">
 
-        <script>
-            if ('service-worker' in navigator) {
-                navigator.serviceWorker.register('./service-worker.js');
-            }
-        </script>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
@@ -74,7 +70,7 @@
 
         let deferredPrompt;
         const addBtn = document.querySelector('#add-button');
-        // addBtn.style.display = 'none';
+        addBtn.style.display = 'none';
 
         window.addEventListener('beforeinstallprompt', (e) => {
             // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -103,6 +99,12 @@
 
 
     </script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js');
+    }
+</script>
 </body>
 
 </html>
