@@ -148,14 +148,18 @@
         </div>
       </section>
 
-    <center>
+      <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js');
+        }
+    </script>s
 
 
 
 
  
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </center>
+
 
     <script>
         // Handle PWA installation
