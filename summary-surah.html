@@ -9,6 +9,8 @@
 
     <link rel="icon" href="./src/icon.jpg">
 
+    <link rel="stylesheet" href="./style.css">
+
 
 
     <style>
@@ -16,11 +18,38 @@
             background-image: url('84248.png');
             background-size: 100% 100%;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         }
     </style>
 </head>
 
 <body>
+
+    <center>
+
+    <div id="app">
+
+        <div class="hadith">
+
+            <h3> {{ title }} </h3>
+            <p>{{ content }}</p>
+
+        </div>
+    <br><br>
+            <button v-on:click="getAlKahfi()" class="button">Surah Al-Kahfi</button>
+            <button v-on:click="getAlAsr()" class="button">Surah Al-Asr</button>
+    
+        </div>
+        
+    </center>
+
+
+
+
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+
+
+    <script src="surah.js"></script>
     <br><br><br><br><br><br><br><br>
 </body>
 
