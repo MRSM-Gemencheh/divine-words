@@ -52,7 +52,7 @@ const app = Vue.createApp   ({
 
     data() {
         return {
-            "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+            "title":" ",
             "content": "Choose the surah you want below",
             "category": "patience",   
         }
