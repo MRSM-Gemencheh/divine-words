@@ -54,14 +54,14 @@ const hadith = {
         "content": "Tell them, (O Prophet): “My servants who have committed excesses against themselves, do not despair of Allah's Mercy. Surely Allah forgives all sins. He is Most Forgiving, Most Merciful (39:53)",
         "category": "sinful",
     },
-       
+
     10: {
         "title": "اِنَّ هٰذَا كَانَ لَـكُمۡ جَزَآءً وَّكَانَ سَعۡيُكُمۡ مَّشۡكُوۡرًا",
         "content": "Behold, this is your recompense and your endeavour has been appreciated",
         "category": "appreciation",
     }
 
-    
+
 
 }
 
@@ -69,21 +69,21 @@ let counter = 1
 
 
 
-const app = Vue.createApp   ({
+const app = Vue.createApp({
 
     data() {
         return {
-            "title":" لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+            "title": " لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
             "content": "Allah does not burden a soul beyond that it can bear (2:286)",
-            "category": "patience",   
+            "category": "patience",
         }
     },
 
-    
+
 
     methods: {
         async getHadith() {
-            
+
             // Fetch from data in hadith const
             this.title = hadith[counter].title
             this.content = hadith[counter].content

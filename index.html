@@ -2,199 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divine Words</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divine Words</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
-        integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" href="./src/icon.jpg">
+  <link rel="icon" href="./src/icon.jpg">
 
-        <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
 
-        <script src="./service-worker.js"></script>
+  <script src="./service-worker.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            background-image: url('84248.png');
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
+  <style>
+    body {
+      background-image: url('bg.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-        h1 {
-            color: rgb(247, 141, 182);
-            font-family: 'Dancing Script', cursive;
-            font-size: 5em;
-            background-color: hsla(288, 100%, 69%, 0.52);
-        }
+    h1 {
+      color: rgb(247, 141, 182);
+      font-family: 'Dancing Script', cursive;
+      font-size: 5em;
+      background-color: hsla(288, 100%, 69%, 0.52);
+    }
 
-        .button {
-            background-color: rgb(247, 141, 182);
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+    .button {
+      background-color: rgb(247, 141, 182);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
 
-        #add-button {
-            background-color: rgb(245, 72, 138);
-        }
+    #add-button {
+      background-color: rgb(245, 72, 138);
+    }
 
-        #logo {
-            border-radius: 40px;
-            width: 5em;
-            height: auto;
-        }
+    #logo {
+      border-radius: 40px;
+      width: 5em;
+      height: auto;
+    }
 
-        .hero .is-info {
-            background-color: rgb(247, 141, 182) !important;
-        }
+    .hero .is-info {
+      background-color: rgb(247, 141, 182) !important;
+    }
 
-        .hero .is-active {
-            background-color: rgb(247, 141, 182) !important;
-        }
+    .hero .is-active {
+      background-color: rgb(247, 141, 182) !important;
+    }
 
-        .hero  {
-            background-color: rgb(247, 141, 182) !important;
-            color: azure;
-            font-family: 'Dancing Script', cursive;
-        }
-
-        
+    .hero {
+      background-color: rgb(247, 141, 182) !important;
+      color: azure;
+      font-family: 'Dancing Script', cursive;
+    }
 
 
-        .hero .navbar-item:hover {
-            background-color: rgb(240, 95, 150) !important;
-        }
 
-    </style>
+
+    .hero .navbar-item:hover {
+      background-color: rgb(240, 95, 150) !important;
+    }
+  </style>
 </head>
 
 <body>
-    <section class="hero is-info is-small">
-        <div class="hero-head">
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                <a class="navbar-item">
-                  <img src="./src/icon.jpg" alt="Logo">
-                </a>
-                <span class="navbar-burger" data-target="navbarMenuHeroB">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-              <div id="navbarMenuHeroB" class="navbar-menu">
-                <div class="navbar-end">
-                  <a href="./index.html" class="navbar-item is-active">
-                    Home
-                  </a>
-                  <span class="navbar-item">
-                    <a id="add-button" class="button is-info is-inverted">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Download App</span>
-                    </a>
+  <section class="hero is-info is-small">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="./src/icon.jpg" alt="Logo">
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a html" class="navbar-item is-active">
+                Home
+              </a>
+              <span class="navbar-item">
+                <a id="add-button" class="button is-info is-inverted">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
                   </span>
-                </div>
-              </div>
+                  <span>Download App</span>
+                </a>
+              </span>
             </div>
-          </nav>
-        </div>
-      
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <p class="title">
-              Divine Words
-            </p>
-            <p class="subtitle">
-              
-            </p>
           </div>
         </div>
-      
-        <div class="hero-foot">
-          <nav class="tabs is-boxed is-fullwidth">
-            <div class="container">
-              <ul>
-                <li class="">
-                  <a href="./motivation.html">Motivation</a>
-                </li>
-                <li class="is-active">
-                  <a>Home</a>
-                </li>
-                <li>
-                  <a href="./summary-surah.html">Quran Summary</a>
-                </li>
+      </nav>
+    </div>
 
-                </li>
-              </ul>
-            </div>
-          </nav>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Divine Words
+        </p>
+        <p class="subtitle">
+
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="">
+              <a href="./motivation.html">Motivation</a>
+            </li>
+            <li class="is-active">
+              <a>Home</a>
+            </li>
+            <li>
+              <a href="./summary-surah.html">Quran Summary</a>
+            </li>
+
+            </li>
+          </ul>
         </div>
-      </section>
+      </nav>
+    </div>
+  </section>
 
-      <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js');
-        }
-    </script>s
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js');
+    }
+  </script>
 
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+  <script>
+    // Handle PWA installation
 
+    let deferredPrompt;
+    const addBtn = document.querySelector('#add-button');
+    // addBtn.style.display = 'none';
 
- 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      // Update UI to notify the user they can add to home screen
+      addBtn.style.display = 'block';
 
-
-    <script>
-        // Handle PWA installation
-
-        let deferredPrompt;
-        const addBtn = document.querySelector('#add-button');
-        // addBtn.style.display = 'none';
-
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent Chrome 67 and earlier from automatically showing the prompt
-            e.preventDefault();
-            // Stash the event so it can be triggered later.
-            deferredPrompt = e;
-            // Update UI to notify the user they can add to home screen
-            addBtn.style.display = 'block';
-
-            addBtn.addEventListener('click', (e) => {
-                // hide our user interface that shows our A2HS button
-                addBtn.style.display = 'none';
-                // Show the prompt
-                deferredPrompt.prompt();
-                // Wait for the user to respond to the prompt
-                deferredPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the A2HS prompt');
-                    } else {
-                        console.log('User dismissed the A2HS prompt');
-                    }
-                    deferredPrompt = null;
-                });
-            });
+      addBtn.addEventListener('click', (e) => {
+        // hide our user interface that shows our A2HS button
+        addBtn.style.display = 'none';
+        // Show the prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the A2HS prompt');
+          } else {
+            console.log('User dismissed the A2HS prompt');
+          }
+          deferredPrompt = null;
         });
+      });
+    });
 
 
-    </script>
+  </script>
 </body>
 
 </html>
